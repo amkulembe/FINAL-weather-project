@@ -7,7 +7,12 @@ function weatherRefresh(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#present-time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#weather-icon");
 
+  iconElement.innerHTML = `<img
+      src="${response.data.condition.icon_url}"
+      class="current-temperature-icon"
+    />`;
   console.log(response.data);
   currentCityElement.innerHTML = response.data.city;
   conditionsElement.innerHTML = response.data.condition.description;
