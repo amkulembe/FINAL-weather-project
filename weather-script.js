@@ -10,7 +10,7 @@ function weatherRefresh(response) {
   let iconElement = document.querySelector("#weather-icon");
 
   iconElement.innerHTML = `<img
-      src="${response.data.condition.icon_url}"
+      src="${response.data.condition.icon_url}" alt="Weather icon"
       class="current-temperature-icon"
     />`;
   console.log(response.data);
