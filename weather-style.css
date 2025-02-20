@@ -74,12 +74,11 @@ strong {
 .current-temperature-icon {
   height: 88px;
   width: 88px;
-  display: inline-block;
+  display: flex;
 }
 
 .current-temperature-value {
   font-size: 88px;
-
   line-height: 88px;
   font-weight: bold;
 }
